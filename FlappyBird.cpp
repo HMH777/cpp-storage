@@ -94,6 +94,7 @@ int main(){
         if(gameOver){
             window->draw(gameover);
             ticks = 0;
+            score = 0;
         };
         window->draw(ground);
         window->display();
