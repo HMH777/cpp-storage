@@ -55,6 +55,7 @@ int main(){
                 randomHeight = rand() % 301;
                 std::cout << "You lost!" << '\n';
                 std::cout << "Your score was " << score << '\n' << '\n';
+                score = 0;
             };
         };
         if (birdY >= 376){
@@ -94,7 +95,6 @@ int main(){
         if(gameOver){
             window->draw(gameover);
             ticks = 0;
-            score = 0;
         };
         window->draw(ground);
         window->display();
